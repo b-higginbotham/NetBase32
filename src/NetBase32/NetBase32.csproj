@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <AssemblyVersion>$(Version)</AssemblyVersion>
   </PropertyGroup>
 
@@ -10,5 +10,6 @@
   <Authors>b-higginbotham</Authors>
   <PackageTags>base32;zbase32</PackageTags>
   <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  <Description>.NET Implementation of z-base-32 encoding.</Description>
   </PropertyGroup>
 </Project>

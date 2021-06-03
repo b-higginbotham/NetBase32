@@ -1,4 +1,4 @@
-# Net-Base32
+# NetBase32
  .NET Implementation of z-base-32 encoding.
 
 # Original z-base-32 Document
