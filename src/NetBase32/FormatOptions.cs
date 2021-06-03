@@ -1,8 +1,7 @@
 namespace NetBase32
 {
     /// <summary>
-    /// Specifies whether <see cref="Encode(byte[], FormatOptions)"/> method inserts "-"
-    /// characters in its output.
+    /// Specifies whether encoding operations insert "-" characters in their output.
     /// </summary>
     public enum FormatOptions
     {

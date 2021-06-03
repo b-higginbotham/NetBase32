@@ -98,6 +98,27 @@ namespace Base32EncodingTests
             Assert.IsTrue(Compare(bytes, Array.Empty<byte>()));
         }
 
+        [TestMethod]
+        public void When_decoding_random_data_with_transcription_errors()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                var expected = GenerateData();
+
+                var encoded = ZBase32.Encode(expected);
+
+                encoded = encoded
+                    .Replace('o', '0')
+                    .Replace('u', 'v')
+                    .Replace('z', '2')
+                    .Replace('1', encoded.IndexOf('1') % 2 == 0 ? 'l' : '|');
+
+                var actual = ZBase32.Decode(encoded);
+
+                Assert.IsTrue(Compare(expected, actual));
+            }
+        }
+
         static byte[] GenerateData()
         {
             using var rng = new RNGCryptoServiceProvider();

@@ -180,7 +180,7 @@ namespace NetBase32
         /// </returns>
         /// <exception cref="ArgumentException">
         /// Thrown when <paramref name="data"/> is not a valid z-base-32 encoded string.
-        /// <exception>
+        /// </exception>
         public static byte[] Decode(string data)
         {
             if (data.Length == 0)
@@ -289,7 +289,7 @@ namespace NetBase32
         /// </param>
         /// <exception cref="ArgumentException">
         /// Thrown when <paramref name="data"/> is not a valid z-base-32 encoded string.
-        /// <exception>
+        /// </exception>
         public static void Validate(string data) => Validate(data.ToCharArray());
 
         private static void Validate(char[] data)
