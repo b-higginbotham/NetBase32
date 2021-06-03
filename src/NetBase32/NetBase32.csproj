@@ -2,8 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <VersionPrefix>0.1.0</VersionPrefix>
-    <VersionSuffix Condition=" '$(Configuration)' == 'Debug' ">build$([System.DateTime]::Now.ToString('yyyyMMdd-HHmm'))</VersionSuffix>
+    <Version>0.1.0</Version>
     <AssemblyVersion>$(Version)</AssemblyVersion>
   </PropertyGroup>
 
