@@ -11,5 +11,6 @@
   <PackageTags>base32;zbase32</PackageTags>
   <PackageLicenseExpression>MIT</PackageLicenseExpression>
   <Description>.NET Implementation of z-base-32 encoding.</Description>
+  <RepositoryUrl>https://github.com/b-higginbotham/NetBase32</RepositoryUrl>
   </PropertyGroup>
 </Project>
