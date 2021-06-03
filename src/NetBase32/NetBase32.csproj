@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix Condition=" '$(Configuration)' == 'Debug' ">build$([System.DateTime]::Now.ToString('yyyyMMdd-HHmm'))</VersionSuffix>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+  <Authors>b-higginbotham</Authors>
+  <PackageTags>base32;zbase32</PackageTags>
+  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

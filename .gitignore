@@ -1,0 +1,7 @@
+#VS Code settings
+.vscode/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
